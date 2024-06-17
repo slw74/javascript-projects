@@ -8,14 +8,45 @@ let shuttleSpeed = 15000;
 // 3) Write conditional expressions to satisfy the following safety rules:
 
 // a) If crewStatus is true, print "Crew Ready" else print "Crew Not Ready".
-
+if (crewStatus) {
+    console.log("Crew Ready");
+}   else {
+    console.log("Crew Not Ready");
+}   
 
 // b) If computerStatusCode is 200, print "Please stand by. Computer is rebooting." Else if computerStatusCode is 400, print "Success! Computer online." Else print "ALERT: Computer offline!"
-
+if (computerStatusCode === 200) {
+    console.log("Please stand by. Computer is rebooting.");
+} else if (crewStatus === 400) {
+    console.log("Success! Computer online.");
+} else {
+    console.log("ALERT:  Computer offline!");
+}
 
 // c) If shuttleSpeed is > 17,500, print "ALERT: Escape velocity reached!" Else if shuttleSpeed is < 8000, print "ALERT: Cannot maintain orbit!" Else print "Stable speed".
+if (shuttleSpeed > 17500) {
+    console.log("ALERT:  Escape velocity reached!");
+} else if (shuttleSpeed < 8000) {
+    console.log("ALERT: Cannot maintain orbit!");
+} else {
+    console.log("Stable speed");
+}
 
+console.log("\n4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?");
+console.log('I interpreted the code blocks mentally before running the file.  I believe code block 1 will return "all systems go" and code block 2 will return "WARNING. Not ready"');
 
-// 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
+//code block 1
+if (crewStatus && computerStatusCode === 200 && spaceSuitsOn) {
+    console.log("all systems go");
+ } else {
+    console.log("WARNING. Not ready");
+ }
 
-console.log(/* "Yes" or "No" */);
+//code block 2
+if (!crewStatus || computerStatusCode !== 200 || !spaceSuitsOn) {
+    console.log("WARNING. Not ready");
+ } else {
+    console.log("all systems go");
+ }
+
+ console.log("\nPost code run debrief - I was wrong about code block 2.  Make a note to come back and analyze again.");
