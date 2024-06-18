@@ -1,6 +1,28 @@
 // Initialize Variables below
+let date = "Monday 2019-03-18";
+let time = "10:05:34 AM";
+let astronautCount = 20;
+let astronautStatus = "ready";
+let averageAstronautMassKg = 80.7;
+let crewMassKg = (astronautCount * averageAstronautMassKg);
+let fuelMassKg = 760000;
+let shuttleMassKg = 74842.31;
+let totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
+let maximumMassLimit = 85000000;
+let fuelTempCelsius = -225;
+let minimumFuelTemp = -300;
+let maximumFuelTemp = -150;
+let fuelLevel = "100%";
+let weatherStatus = "clear";
+let preparedForLiftOff = true;
+
 
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
+if (astronautCount > 7) {
+    preparedForLiftOff = false;
+    console.log("Danger Will Robinson! " + (astronautCount - 7) + " must exit the craft ASAP!");
+}
+
 
 // add logic below to verify all astronauts are ready
 
