@@ -17,6 +17,10 @@ if (fuelLevel >= 20000) {
    launchReady = false;
 }
 
+console.log(launchReady);
+console.log("launchReady's value presents as false after the code is run because fuelLevel is too low.");
+
+
 // if (crewStatus && computerStatus === 'green'){
 //    console.log('Crew & computer cleared.');
 //    launchReady = true;

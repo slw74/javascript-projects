@@ -17,12 +17,14 @@ if (fuelLevel >= 20000) {
 
 console.log("launchReady = ", launchReady);
 
-if (crewStatus && computerStatus === 'green'){
+if (crewStatus && computerStatus === 'green' && fuelLevel >= 20000){
    console.log('Crew & computer cleared.');
    launchReady = true;
 } else {
-   console.log('WARNING: Crew or computer not ready!');
+   console.log('WARNING: Something is not ready! Double check everything!');
    launchReady = false;
 }
 
 console.log("launchReady = ", launchReady);
+
+console.log("DEBUGGER'S NOTE - In line 20 I added the boolean that requires fuelLevel to be 20,000 or more to be true as a LOGIC AND with the booleans that check the crew and computer status.  Now ALL THREE must be true together to get permission for lift off! I updated the error message in line 24 as well.");

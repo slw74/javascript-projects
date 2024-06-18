@@ -26,6 +26,9 @@ if (crewStatus && computerStatus === 'green'){
    launchReady = false;
 }
 
+console.log(launchReady);
+console.log("launchReady's value presents as true after the code snippet is run because the crew and computer stats are good to go.");
+
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
 //    console.log('Liftoff!');

@@ -29,6 +29,8 @@ if (crewStatus && computerStatus === 'green'){
 
 console.log("launchReady = ", launchReady);
 
+console.log("\nDEBUGGER'S NOTE - launchReady's value is true at the end of the code snippet, but it should be false since fuel is insufficient. ")
+
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
 //    console.log('Liftoff!');

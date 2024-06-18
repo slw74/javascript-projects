@@ -30,3 +30,5 @@ if (launchReady) {
 } else {
    console.log('Launch scrubbed.');
 }
+
+console.log("\nDEBUGGER NOTES:  When I ran the code I noticed the first console log output warns that there is not enough gas.  Yet the other outputs go on to describe a blast off that should probably not be happening...?");
